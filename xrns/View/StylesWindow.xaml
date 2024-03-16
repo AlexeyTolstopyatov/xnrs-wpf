@@ -1,0 +1,17 @@
+﻿<Window x:Class="xnrs.View.StylesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:xnrs.View"
+        
+        mc:Ignorable="d"
+        Title="Доступные образцы" Height="260" Width="230">
+    <Grid>
+        <ListBox x:Name="StylesList" 
+                 d:ItemsSource="{d:SampleData ItemCount=5}" 
+                 MouseDoubleClick="StyleSelect"
+                 />
+
+    </Grid>
+</Window>
